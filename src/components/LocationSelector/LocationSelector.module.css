@@ -1,0 +1,30 @@
+.locationSelector {
+	text-align: center;
+	margin-top: 50px;
+	line-height: 1.5;
+}
+
+.getLocationButton {
+	display: block;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--button-color);
+	transition: 0.3s;
+	margin: 10px auto;
+}
+
+.getLocationButton:hover {
+	background-color: var(--button-color-hover);
+}
+
+.getLocationButton.dark {
+	color: #fcfcfc;
+	background-color: var(--button-color-dark);
+	transition: 0.3s;
+}
+
+.getLocationButton.dark:hover {
+	background-color: var(--button-color-dark-hover);
+}

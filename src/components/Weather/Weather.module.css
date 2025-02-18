@@ -1,0 +1,186 @@
+.currentWeatherContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.currentWeather {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.condition {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.condition img {
+	width: 100px;
+	height: 100px;
+}
+
+.condition p {
+	font-size: 18px;
+}
+
+.temperature {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	gap: 10px;
+}
+
+.realTemperature {
+}
+
+.maxMinTemperature {
+	font-size: 20px;
+}
+
+.apparentTemperature {
+	font-size: 16px;
+}
+
+.weatherMetrics {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	font-size: 16px;
+}
+
+.weatherMetrics > div {
+	display: flex;
+	align-items: center;
+}
+
+.weatherMetrics p {
+	margin-left: 5px;
+}
+
+.hourlyWeatherContainer {
+	margin: 40px auto 50px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hourlyForecast {
+	width: 60%;
+	max-width: 550px;
+	font-size: 14px;
+	overflow: auto;
+	white-space: nowrap;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+
+.hourlyForecast::-webkit-scrollbar {
+	height: 6px;
+}
+
+.hourlyForecast::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.hourlyForecast::-webkit-scrollbar-thumb {
+	background-color: rgba(155, 155, 155, 0.7);
+	border-radius: 20px;
+}
+
+.hourlyForecast li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.currentIcon {
+	width: 100px;
+	height: 100px;
+}
+
+.hourlyIcon {
+	width: 50px;
+	height: 50px;
+}
+
+.dailyIcon {
+	width: 75px;
+	height: 75px;
+}
+
+.hideText {
+	visibility: hidden;
+}
+
+.dailyWeatherContainer {
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dailyForecast {
+	width: 60%;
+	max-width: 750px;
+	font-size: 18px;
+}
+
+.dailyForecast li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	width: 100%;
+	height: 75px;
+}
+
+.dailyDate {
+	text-align: left;
+	width: 30%;
+}
+
+.dailyCondition {
+	width: 20%;
+}
+
+.dailyTemps {
+	width: 25%;
+}
+
+.dailyPrecip {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	font-size: 14px;
+}
+
+.dailyDivider {
+	border: 1px solid rgb(231, 231, 231);
+}
+
+.dailyDivider.dark {
+	border: 1px solid rgb(53, 53, 53);
+}
+
+.precipChance {
+	width: 25px;
+	height: 25px;
+	text-align: right;
+	margin-left: 10px;
+}
+
+.precipChanceIcon {
+	position: relative;
+	bottom: 2px;
+}
+
+.currentConditionIcon {
+	width: 25px;
+	height: 25px;
+}

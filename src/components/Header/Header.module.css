@@ -1,0 +1,199 @@
+.headerStyle {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 0;
+	background-color: rgb(232, 232, 232);
+	color: #2d2d2d;
+}
+
+.getLocButton {
+	padding: 2px 4px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--button-color);
+	transition: 0.3s;
+}
+
+.getLocButton:hover {
+	background-color: var(--button-color-hover);
+}
+
+.getLocButton.dark {
+	background-color: var(--button-color-dark);
+}
+
+.getLocButton.dark:hover {
+	background-color: var(--button-color-dark-hover);
+}
+
+.searchWrapper {
+	position: relative;
+}
+
+.searchInput {
+	font-size: 16px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	border: none;
+	margin-right: 5px;
+	outline: none;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+
+.searchInput::placeholder {
+	color: #a5a5a5;
+}
+
+.searchInput:focus {
+	outline: 2px solid rgb(150, 150, 150);
+}
+
+.searchButton {
+	display: inline-block;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--button-color);
+	transition: 0.3s;
+}
+
+.searchButton:hover {
+	background-color: var(--button-color-hover);
+}
+
+.searchSuggestionsList {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 325px;
+	margin-top: 5px;
+	list-style-type: none;
+	user-select: none;
+	max-height: 150px;
+	overflow-y: auto;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.searchSuggestionsList li {
+	padding: 10px;
+}
+
+.searchSuggestionsList li:hover {
+	background-color: rgb(243, 243, 243);
+	cursor: pointer;
+}
+
+.unitSelectWrapper select {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.displayModeToggle button {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: greenyellow;
+}
+
+.settingsButton button {
+	padding: 2px 4px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--button-color);
+	transition: 0.3s;
+}
+
+.settingsButton button:hover {
+	background-color: var(--button-color-hover);
+}
+
+.settingsIcon,
+.getLocIcon {
+	width: 25px;
+	height: 25px;
+}
+
+/* Dark theme styles */
+.headerStyle.dark {
+	background-color: #373737;
+	color: #fcfcfc;
+}
+
+.headerStyle.dark .searchInput {
+	color: #e4e4e4;
+	background-color: #686868;
+}
+
+.headerStyle.dark .searchInput::placeholder {
+	color: #e4e4e4;
+}
+
+.headerStyle.dark .searchButton {
+	color: #fcfcfc;
+	background-color: var(--button-color-dark);
+	transition: 0.3s;
+}
+
+.headerStyle.dark .searchButton:hover {
+	background-color: var(--button-color-dark-hover);
+}
+
+.headerStyle.dark .searchSuggestionsList {
+	background-color: #444444;
+}
+
+.headerStyle.dark .searchSuggestionsList li {
+	color: #fcfcfc;
+}
+
+.headerStyle.dark .searchSuggestionsList li:hover {
+	background-color: #555555;
+}
+
+.headerStyle.dark .unitSelectWrapper label {
+	color: #fcfcfc;
+}
+
+.headerStyle.dark .unitSelectWrapper select {
+	background-color: #444444;
+	color: #fcfcfc;
+}
+
+.headerStyle.dark .displayModeToggle button {
+	background-color: #444444;
+	color: #fcfcfc;
+}
+
+.headerStyle.dark .settingsButton button {
+	color: #fcfcfc;
+	background-color: var(--button-color-dark);
+	transition: 0.3s;
+}
+
+.headerStyle.dark .settingsButton button:hover {
+	background-color: var(--button-color-dark-hover);
+}
+
+.settingsDialog {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgb(232, 232, 232);
+	width: 600px;
+	border: 2px solid rgb(147, 147, 147);
+	border-radius: 8px;
+}
+
+.settingsDialog.dark {
+	background-color: #373737;
+	border: 2px solid rgb(88, 88, 88);
+}
